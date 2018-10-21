@@ -351,6 +351,21 @@ X VCC 8 450 150 197 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# taobao-components_MC-146
+#
+DEF taobao-components_MC-146 U 0 40 Y Y 1 F N
+F0 "U" 0 -250 50 H V C CNN
+F1 "taobao-components_MC-146" 0 -350 50 H V C CNN
+F2 "" 300 0 50 H I C CNN
+F3 "" 300 0 50 H I C CNN
+DRAW
+S -300 200 250 -150 0 1 0 f
+X XOUT 1 450 100 197 L 50 50 1 1 W
+X XIN 2 450 -50 197 L 50 50 1 1 W
+X GND 3 -500 100 197 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # taobao-components_MX25L12835F
 #
 DEF taobao-components_MX25L12835F U 0 40 Y Y 1 F N
@@ -725,6 +740,22 @@ X Vin 3 -400 150 197 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# taobao-components_XT_3225
+#
+DEF taobao-components_XT_3225 U 0 40 Y Y 1 F N
+F0 "U" 0 -450 50 H V C CNN
+F1 "taobao-components_XT_3225" 0 -550 50 H V C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 f
+X XIN 1 -450 -150 197 R 50 50 1 1 W
+X GND 2 450 -150 197 L 50 50 1 1 W
+X XOUT 3 450 150 197 L 50 50 1 1 W
+X GND 4 -450 150 197 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # taobao-components_allwinner-V3S-eLQFP128
 #
 DEF taobao-components_allwinner-V3S-eLQFP128 U 0 40 Y Y 1 F N
@@ -931,6 +962,25 @@ ENDDEF
 DEF taobao-r_R104 R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
 F1 "taobao-r_R104" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ Resistor_SMD:R_0805_*
+ Resistor_SMD:R_0603_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# taobao-r_R106
+#
+DEF taobao-r_R106 R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "taobao-r_R106" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

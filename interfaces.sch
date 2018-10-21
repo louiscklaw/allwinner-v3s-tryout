@@ -1272,7 +1272,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 9000 8350 9350
 Wire Bus Line
-	5750 5600 5750 6250
-Wire Bus Line
 	1550 2750 1550 5500
+Wire Bus Line
+	5750 5600 5750 6250
 $EndSCHEMATC
