@@ -1200,9 +1200,51 @@ F 3 "" H 10500 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10500 3550 10500 3450
-Wire Bus Line
-	5750 5600 5750 6250
 Connection ~ 10500 3450
 Wire Wire Line
 	10500 3450 10850 3450
+Entry Wire Line
+	1550 5500 1650 5600
+Entry Wire Line
+	1550 5400 1650 5500
+Entry Wire Line
+	1550 5300 1650 5400
+Entry Wire Line
+	1550 5200 1650 5300
+Entry Wire Line
+	1550 5100 1650 5200
+Entry Wire Line
+	1550 5000 1650 5100
+Entry Wire Line
+	1550 4700 1650 4800
+Entry Wire Line
+	1550 4600 1650 4700
+Entry Wire Line
+	1550 4500 1650 4600
+Entry Wire Line
+	1550 4400 1650 4500
+Entry Wire Line
+	1550 4300 1650 4400
+Entry Wire Line
+	1550 4200 1650 4300
+Entry Wire Line
+	1550 3900 1650 4000
+Entry Wire Line
+	1550 3800 1650 3900
+Entry Wire Line
+	1550 3700 1650 3800
+Entry Wire Line
+	1550 3600 1650 3700
+Entry Wire Line
+	1550 3500 1650 3600
+Entry Wire Line
+	1550 3400 1650 3500
+Wire Bus Line
+	1550 2750 950  2750
+Wire Bus Line
+	5750 5600 5750 6250
+Wire Bus Line
+	1550 2750 1550 5500
+Text Label 1100 2750 0    50   ~ 0
+LCD_Dn
 $EndSCHEMATC
