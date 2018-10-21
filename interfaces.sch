@@ -1241,10 +1241,38 @@ Entry Wire Line
 	1550 3400 1650 3500
 Wire Bus Line
 	1550 2750 950  2750
+Text Label 1100 2750 0    50   ~ 0
+LCD_Dn
+$Comp
+L customized_power:+3V3 #PWR?
+U 1 1 5C3E281F
+P 8350 8600
+F 0 "#PWR?" H 8350 8450 50  0001 C CNN
+F 1 "+3V3" H 8400 8800 50  0000 C CNN
+F 2 "" H 8350 8600 50  0001 C CNN
+F 3 "" H 8350 8600 50  0001 C CNN
+	1    8350 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-r:R103 R?
+U 1 1 5C3E2B0C
+P 8350 8900
+F 0 "R?" H 8450 8950 50  0000 L CNN
+F 1 "R103" H 8450 8900 50  0000 L CNN
+F 2 "" H 8350 8900 50  0001 C CNN
+F 3 "~" H 8350 8900 50  0001 C CNN
+	1    8350 8900
+	1    0    0    -1  
+$EndComp
+Text Label 8350 9350 1    50   ~ 0
+SPI_CS
+Wire Wire Line
+	8350 8600 8350 8800
+Wire Wire Line
+	8350 9000 8350 9350
 Wire Bus Line
 	5750 5600 5750 6250
 Wire Bus Line
 	1550 2750 1550 5500
-Text Label 1100 2750 0    50   ~ 0
-LCD_Dn
 $EndSCHEMATC
