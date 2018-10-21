@@ -2,7 +2,7 @@ EESchema Schematic File Version 4
 LIBS:I2C-adc-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 3 5
 Title ""
@@ -890,4 +890,104 @@ F 3 "" H 1500 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1500 4000 1500 4050
+$Comp
+L taobao-components:XC6206 U?
+U 1 1 5C0F1BEA
+P 3750 8300
+F 0 "U?" H 3750 8700 50  0000 C CNN
+F 1 "XC6206" H 3750 8600 50  0000 C CNN
+F 2 "" H 3750 7450 50  0001 C CNN
+F 3 "" H 3750 7450 50  0001 C CNN
+	1    3750 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L customized_power:+3V3 #PWR?
+U 1 1 5C0F2036
+P 3050 8000
+F 0 "#PWR?" H 3050 7850 50  0001 C CNN
+F 1 "+3V3" H 3100 8200 50  0000 C CNN
+F 2 "" H 3050 8000 50  0001 C CNN
+F 3 "" H 3050 8000 50  0001 C CNN
+	1    3050 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 8000 3050 8150
+Wire Wire Line
+	3050 8150 3350 8150
+$Comp
+L power:GND #PWR?
+U 1 1 5C0F77BD
+P 3050 8900
+F 0 "#PWR?" H 3050 8650 50  0001 C CNN
+F 1 "GND" H 3100 8700 50  0000 C CNN
+F 2 "" H 3050 8900 50  0001 C CNN
+F 3 "" H 3050 8900 50  0001 C CNN
+	1    3050 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 8900 3050 8650
+Wire Wire Line
+	3050 8450 3350 8450
+$Comp
+L taobao-c:C104 C?
+U 1 1 5C0FD01C
+P 4300 8500
+F 0 "C?" H 4400 8550 50  0000 L CNN
+F 1 "C104" H 4400 8500 50  0000 L CNN
+F 2 "" H 4300 8500 50  0001 C CNN
+F 3 "~" H 4300 8500 50  0001 C CNN
+	1    4300 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-c:C106 C?
+U 1 1 5C0FD0F4
+P 4700 8500
+F 0 "C?" H 4800 8550 50  0000 L CNN
+F 1 "C106" H 4800 8500 50  0000 L CNN
+F 2 "" H 4700 8500 50  0001 C CNN
+F 3 "~" H 4700 8500 50  0001 C CNN
+	1    4700 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 8300 4300 8300
+Wire Wire Line
+	4300 8300 4300 8400
+Wire Wire Line
+	4300 8300 4450 8300
+Wire Wire Line
+	4700 8300 4700 8400
+Connection ~ 4300 8300
+Wire Wire Line
+	4300 8600 4300 8650
+Connection ~ 3050 8650
+Wire Wire Line
+	3050 8650 3050 8450
+Wire Wire Line
+	4700 8600 4700 8650
+Wire Wire Line
+	3050 8650 4300 8650
+Connection ~ 4300 8650
+Wire Wire Line
+	4300 8650 4700 8650
+$Comp
+L taobao-components:+3V0 #PWR?
+U 1 1 5C11A42D
+P 4450 8200
+F 0 "#PWR?" H 4450 8050 50  0001 C CNN
+F 1 "+3V0" H 4500 8400 50  0000 C CNN
+F 2 "" H 4450 8200 50  0001 C CNN
+F 3 "" H 4450 8200 50  0001 C CNN
+	1    4450 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 8200 4450 8300
+Connection ~ 4450 8300
+Wire Wire Line
+	4450 8300 4700 8300
 $EndSCHEMATC
