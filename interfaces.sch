@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:I2C-adc-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -14,4 +14,296 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L taobao-components:FC-40P-LCD U?
+U 1 1 5BED9991
+P 3700 7600
+F 0 "U?" H 3900 7550 50  0000 L CNN
+F 1 "FC-40P-LCD" H 3900 7500 50  0000 L CNN
+F 2 "" H 2450 8550 50  0001 C CNN
+F 3 "" H 2450 8550 50  0001 C CNN
+	1    3700 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-components:VLED- #PWR?
+U 1 1 5BEDA56F
+P 2150 5600
+F 0 "#PWR?" H 2150 5450 50  0001 C CNN
+F 1 "VLED-" V 2200 5700 50  0000 L CNN
+F 2 "" H 2150 5600 50  0001 C CNN
+F 3 "" H 2150 5600 50  0001 C CNN
+	1    2150 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 5600 2900 5600
+$Comp
+L taobao-components:VLED+ #PWR?
+U 1 1 5BEDA610
+P 2550 5700
+F 0 "#PWR?" H 2550 5550 50  0001 C CNN
+F 1 "VLED+" V 2600 5800 50  0000 L CNN
+F 2 "" H 2550 5700 50  0001 C CNN
+F 3 "" H 2550 5700 50  0001 C CNN
+	1    2550 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 5700 2900 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5BEDA67D
+P 2150 5800
+F 0 "#PWR?" H 2150 5550 50  0001 C CNN
+F 1 "GND" V 2150 5650 50  0000 R CNN
+F 2 "" H 2150 5800 50  0001 C CNN
+F 3 "" H 2150 5800 50  0001 C CNN
+	1    2150 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 5800 2900 5800
+$Comp
+L customized_power:+3V3 #PWR?
+U 1 1 5BEDA6F2
+P 2600 5900
+F 0 "#PWR?" H 2600 5750 50  0001 C CNN
+F 1 "+3V3" V 2650 6050 50  0000 L CNN
+F 2 "" H 2600 5900 50  0001 C CNN
+F 3 "" H 2600 5900 50  0001 C CNN
+	1    2600 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 5900 2900 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5BEDA9BA
+P 2150 6050
+F 0 "#PWR?" H 2150 5800 50  0001 C CNN
+F 1 "GND" V 2150 5900 50  0000 R CNN
+F 2 "" H 2150 6050 50  0001 C CNN
+F 3 "" H 2150 6050 50  0001 C CNN
+	1    2150 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 6050 2300 6050
+Wire Wire Line
+	2300 6050 2300 6000
+Wire Wire Line
+	2300 6000 2900 6000
+Wire Wire Line
+	2300 6050 2300 6100
+Wire Wire Line
+	2300 6100 2900 6100
+Connection ~ 2300 6050
+Text Label 1900 6200 0    50   ~ 0
+LCD_D18
+Text Label 1900 6300 0    50   ~ 0
+LCD_D19
+Text Label 1900 6400 0    50   ~ 0
+LCD_D20
+Text Label 1900 6500 0    50   ~ 0
+LCD_D21
+Text Label 1900 6600 0    50   ~ 0
+LCD_D22
+Text Label 1900 6700 0    50   ~ 0
+LCD_D23
+Wire Wire Line
+	2900 6200 1650 6200
+Wire Wire Line
+	2900 6300 1650 6300
+Wire Wire Line
+	2900 6400 1650 6400
+Wire Wire Line
+	2900 6500 1650 6500
+Wire Wire Line
+	2900 6600 1650 6600
+Wire Wire Line
+	2900 6700 1650 6700
+$Comp
+L power:GND #PWR?
+U 1 1 5BEDAC0E
+P 2150 6850
+F 0 "#PWR?" H 2150 6600 50  0001 C CNN
+F 1 "GND" V 2150 6700 50  0000 R CNN
+F 2 "" H 2150 6850 50  0001 C CNN
+F 3 "" H 2150 6850 50  0001 C CNN
+	1    2150 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 6850 2300 6850
+Wire Wire Line
+	2300 6850 2300 6800
+Wire Wire Line
+	2300 6800 2900 6800
+Wire Wire Line
+	2300 6850 2300 6900
+Wire Wire Line
+	2300 6900 2900 6900
+Connection ~ 2300 6850
+Text Label 1900 7000 0    50   ~ 0
+LCD_D10
+Text Label 1900 7100 0    50   ~ 0
+LCD_D11
+Text Label 1900 7200 0    50   ~ 0
+LCD_D12
+Text Label 1900 7300 0    50   ~ 0
+LCD_D13
+Text Label 1900 7400 0    50   ~ 0
+LCD_D14
+Text Label 1900 7500 0    50   ~ 0
+LCD_D15
+Wire Wire Line
+	1650 7000 2900 7000
+Wire Wire Line
+	1650 7100 2900 7100
+Wire Wire Line
+	1650 7200 2900 7200
+Wire Wire Line
+	1650 7300 2900 7300
+Wire Wire Line
+	1650 7400 2900 7400
+Wire Wire Line
+	1650 7500 2900 7500
+$Comp
+L power:GND #PWR?
+U 1 1 5BEDB3CF
+P 2150 7650
+F 0 "#PWR?" H 2150 7400 50  0001 C CNN
+F 1 "GND" V 2150 7500 50  0000 R CNN
+F 2 "" H 2150 7650 50  0001 C CNN
+F 3 "" H 2150 7650 50  0001 C CNN
+	1    2150 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 7650 2300 7650
+Wire Wire Line
+	2300 7650 2300 7600
+Wire Wire Line
+	2300 7600 2900 7600
+Wire Wire Line
+	2300 7650 2300 7700
+Wire Wire Line
+	2300 7700 2900 7700
+Connection ~ 2300 7650
+Text Label 1900 7800 0    50   ~ 0
+LCD_D2
+Text Label 1900 7900 0    50   ~ 0
+LCD_D3
+Text Label 1900 8000 0    50   ~ 0
+LCD_D4
+Text Label 1900 8100 0    50   ~ 0
+LCD_D5
+Text Label 1900 8200 0    50   ~ 0
+LCD_D6
+Text Label 1900 8300 0    50   ~ 0
+LCD_D7
+Wire Wire Line
+	1650 7800 2900 7800
+Wire Wire Line
+	1650 7900 2900 7900
+Wire Wire Line
+	1650 8000 2900 8000
+Wire Wire Line
+	1650 8100 2900 8100
+Wire Wire Line
+	1650 8200 2900 8200
+Wire Wire Line
+	1650 8300 2900 8300
+$Comp
+L power:GND #PWR?
+U 1 1 5BEDC045
+P 2150 8400
+F 0 "#PWR?" H 2150 8150 50  0001 C CNN
+F 1 "GND" V 2150 8250 50  0000 R CNN
+F 2 "" H 2150 8400 50  0001 C CNN
+F 3 "" H 2150 8400 50  0001 C CNN
+	1    2150 8400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 8400 2900 8400
+Text Label 1900 8500 0    50   ~ 0
+LCD_CLK
+Wire Wire Line
+	1650 8500 2900 8500
+$Comp
+L customized_power:+3V3 #PWR?
+U 1 1 5BEDD41C
+P 2150 8600
+F 0 "#PWR?" H 2150 8450 50  0001 C CNN
+F 1 "+3V3" V 2200 8750 50  0000 L CNN
+F 2 "" H 2150 8600 50  0001 C CNN
+F 3 "" H 2150 8600 50  0001 C CNN
+	1    2150 8600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 8600 2900 8600
+Text Label 1900 8700 0    50   ~ 0
+LCD_HSYNC
+Text Label 1900 8800 0    50   ~ 0
+LCD_VSYNC
+Wire Wire Line
+	2900 8800 1650 8800
+Wire Wire Line
+	1650 8700 2900 8700
+Text Label 1900 8900 0    50   ~ 0
+LCD_DE
+Wire Wire Line
+	1650 8900 2900 8900
+$Comp
+L power:GND #PWR?
+U 1 1 5BEE0F2C
+P 2150 9100
+F 0 "#PWR?" H 2150 8850 50  0001 C CNN
+F 1 "GND" V 2150 8950 50  0000 R CNN
+F 2 "" H 2150 9100 50  0001 C CNN
+F 3 "" H 2150 9100 50  0001 C CNN
+	1    2150 9100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 9100 2900 9100
+Text Label 1900 9200 0    50   ~ 0
+TPX1
+Wire Wire Line
+	1650 9200 2900 9200
+Text Label 1900 9300 0    50   ~ 0
+TPY1
+Wire Wire Line
+	1650 9300 2900 9300
+Text Label 1900 9400 0    50   ~ 0
+TPX2
+Wire Wire Line
+	1650 9400 2900 9400
+Text Label 1900 9500 0    50   ~ 0
+TPY2
+Wire Wire Line
+	1650 9500 2900 9500
+$Comp
+L power:GND #PWR?
+U 1 1 5BEE57FE
+P 2650 9950
+F 0 "#PWR?" H 2650 9700 50  0001 C CNN
+F 1 "GND" H 2700 9750 50  0000 C CNN
+F 2 "" H 2650 9950 50  0001 C CNN
+F 3 "" H 2650 9950 50  0001 C CNN
+	1    2650 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 9950 2650 9800
+Wire Wire Line
+	2650 9700 2900 9700
+Wire Wire Line
+	2900 9800 2650 9800
+Connection ~ 2650 9800
+Wire Wire Line
+	2650 9800 2650 9700
 $EndSCHEMATC
