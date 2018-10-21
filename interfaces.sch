@@ -1275,4 +1275,6 @@ Wire Bus Line
 	1550 2750 1550 5500
 Wire Bus Line
 	5750 5600 5750 6250
+Text HLabel 950  2750 0    50   Input ~ 0
+LCD_Dn
 $EndSCHEMATC
