@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:I2C-adc-cache
+LIBS:allwinner-v3s-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -98,16 +98,6 @@ Text Label 4050 4000 0    50   ~ 0
 SDC1_D1
 Text Label 4050 4100 0    50   ~ 0
 SDC1_D0
-Entry Wire Line
-	3850 3800 3950 3900
-Entry Wire Line
-	3850 3900 3950 4000
-Entry Wire Line
-	3850 4000 3950 4100
-Wire Bus Line
-	3850 3500 3350 3500
-Text Label 3450 3500 0    50   ~ 0
-SDC1_Dn
 Text Label 4050 4200 0    50   ~ 0
 MCSI_PWDN
 Wire Wire Line
@@ -848,42 +838,42 @@ SDC0_D0
 Text Label 8200 2050 3    50   ~ 0
 SDC0_D1
 Wire Wire Line
-	8500 1900 8500 2700
+	8500 2050 8500 2700
 $Comp
 L taobao-components:Vio #PWR?
 U 1 1 5BDFAC67
-P 8500 1900
-F 0 "#PWR?" H 8500 1750 50  0001 C CNN
-F 1 "Vio" V 8500 2050 50  0000 C CNN
-F 2 "" H 8500 1900 50  0001 C CNN
-F 3 "" H 8500 1900 50  0001 C CNN
-	1    8500 1900
+P 8500 2050
+F 0 "#PWR?" H 8500 1900 50  0001 C CNN
+F 1 "Vio" V 8500 2200 50  0000 C CNN
+F 2 "" H 8500 2050 50  0001 C CNN
+F 3 "" H 8500 2050 50  0001 C CNN
+	1    8500 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 1900 8100 2700
+	8100 2050 8100 2700
 $Comp
 L taobao-components:Vsys #PWR?
 U 1 1 5BE1A41F
-P 8100 1900
-F 0 "#PWR?" H 8100 1750 50  0001 C CNN
-F 1 "Vsys" V 8100 2100 50  0000 C CNN
-F 2 "" H 8100 1900 50  0001 C CNN
-F 3 "" H 8100 1900 50  0001 C CNN
-	1    8100 1900
+P 8100 2050
+F 0 "#PWR?" H 8100 1900 50  0001 C CNN
+F 1 "Vsys" V 8100 2250 50  0000 C CNN
+F 2 "" H 8100 2050 50  0001 C CNN
+F 3 "" H 8100 2050 50  0001 C CNN
+	1    8100 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2100 8000 2700
+	8000 2400 8000 2700
 $Comp
 L customized_power:VUSB #PWR?
 U 1 1 5BE24F83
-P 8000 2100
-F 0 "#PWR?" H 8000 1950 50  0001 C CNN
-F 1 "VUSB" V 8000 2300 50  0000 C CNN
-F 2 "" H 8000 2100 50  0001 C CNN
-F 3 "" H 8000 2100 50  0001 C CNN
-	1    8000 2100
+P 8000 2400
+F 0 "#PWR?" H 8000 2250 50  0001 C CNN
+F 1 "VUSB" V 8000 2600 50  0000 C CNN
+F 2 "" H 8000 2400 50  0001 C CNN
+F 3 "" H 8000 2400 50  0001 C CNN
+	1    8000 2400
 	1    0    0    -1  
 $EndComp
 Text Label 7800 2050 3    50   ~ 0
@@ -1012,64 +1002,6 @@ F 3 "" H 6200 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 2150 6200 2700
-Wire Bus Line
-	6000 1650 5500 1650
-Text Label 5600 1650 0    50   ~ 0
-SDC1_Dn
-Entry Wire Line
-	6000 1650 6100 1750
-Entry Wire Line
-	3850 4300 3950 4400
-Entry Wire Line
-	3850 4400 3950 4500
-Entry Wire Line
-	3850 4800 3950 4900
-Entry Wire Line
-	3850 5000 3950 5100
-Entry Wire Line
-	3850 5100 3950 5200
-Entry Wire Line
-	3850 5200 3950 5300
-Entry Wire Line
-	3850 5300 3950 5400
-Entry Wire Line
-	3850 5400 3950 5500
-Entry Wire Line
-	3850 5500 3950 5600
-Entry Wire Line
-	3850 5900 3950 6000
-Entry Wire Line
-	3850 6000 3950 6100
-Entry Wire Line
-	3850 6100 3950 6200
-Entry Wire Line
-	3850 6400 3950 6500
-Entry Wire Line
-	3850 6500 3950 6600
-Entry Wire Line
-	3850 6700 3950 6800
-Entry Wire Line
-	3850 6800 3950 6900
-Entry Wire Line
-	3850 6900 3950 7000
-Wire Bus Line
-	3850 4250 3350 4250
-Text Label 3450 4250 0    50   ~ 0
-LCD_Dn
-Entry Wire Line
-	8300 1750 8400 1650
-Entry Wire Line
-	8400 1750 8500 1650
-Entry Wire Line
-	8700 1750 8800 1650
-Entry Wire Line
-	8800 1750 8900 1650
-Wire Bus Line
-	8950 1650 8950 1300
-Wire Bus Line
-	8950 1300 9400 1300
-Text Label 9050 1300 0    50   ~ 0
-SDC0_Dn
 $Comp
 L taobao-components:MC-146 U?
 U 1 1 5C409733
@@ -1369,10 +1301,58 @@ Wire Bus Line
 	1450 900  950  900 
 Text Label 1050 900  0    50   ~ 0
 LCD_Dn
-Wire Bus Line
-	3850 3500 3850 4000
-Wire Bus Line
-	8400 1650 8950 1650
-Wire Bus Line
-	3850 4250 3850 6900
+Text GLabel 3950 3900 0    50   Input ~ 0
+SDC1_D2
+Text GLabel 3950 4000 0    50   Input ~ 0
+SDC1_D1
+Text GLabel 3950 4100 0    50   Input ~ 0
+SDC1_D0
+Text GLabel 3950 4400 0    50   Input ~ 0
+LCD_D23
+Text GLabel 3950 4500 0    50   Input ~ 0
+LCD_D22
+Text GLabel 3950 4900 0    50   Input ~ 0
+LCD_D21
+Text GLabel 3950 5100 0    50   Input ~ 0
+LCD_D20
+Text GLabel 3950 5200 0    50   Input ~ 0
+LCD_D19
+Text GLabel 3950 5300 0    50   Input ~ 0
+LCD_D18
+Text GLabel 3950 5400 0    50   Input ~ 0
+LCD_D15
+Text GLabel 3950 5500 0    50   Input ~ 0
+LCD_D14
+Text GLabel 3950 5600 0    50   Input ~ 0
+LCD_D13
+Text GLabel 3950 6000 0    50   Input ~ 0
+LCD_D12
+Text GLabel 3950 6100 0    50   Input ~ 0
+LCD_D11
+Text GLabel 3950 6200 0    50   Input ~ 0
+LCD_D10
+Text GLabel 3950 6500 0    50   Input ~ 0
+LCD_D7
+Text GLabel 3950 6600 0    50   Input ~ 0
+LCD_D6
+Text GLabel 3950 6800 0    50   Input ~ 0
+LCD_D5
+Text GLabel 3950 6900 0    50   Input ~ 0
+LCD_D4
+Text GLabel 3950 7000 0    50   Input ~ 0
+LCD_D3
+Text GLabel 6100 1750 1    50   Input ~ 0
+SDC1_D3
+Text GLabel 8200 1750 1    50   Input ~ 0
+SDC0_D1
+Text GLabel 8300 1750 1    50   Input ~ 0
+SDC0_D0
+Text GLabel 8400 1750 1    50   Input ~ 0
+SDC0_CLK
+Text GLabel 8600 1750 1    50   Input ~ 0
+SDC0_CMD
+Text GLabel 8700 1750 1    50   Input ~ 0
+SDC0_D3
+Text GLabel 8800 1750 1    50   Input ~ 0
+SDC0_D2
 $EndSCHEMATC

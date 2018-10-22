@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:I2C-adc-cache
+LIBS:allwinner-v3s-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
@@ -19,7 +19,6 @@ S 12500 6150 1550 2400
 U 5BCC9E7B
 F0 "CPU" 50
 F1 "CPU.sch" 50
-F2 "LCD_Dn" I L 12500 7600 50 
 $EndSheet
 $Sheet
 S 12500 4850 1550 700 
@@ -38,8 +37,5 @@ S 9750 6150 1600 2400
 U 5BCCA602
 F0 "interfaces" 50
 F1 "interfaces.sch" 50
-F2 "LCD_Dn" I R 11350 7600 50 
 $EndSheet
-Wire Bus Line
-	11350 7600 12500 7600
 $EndSCHEMATC

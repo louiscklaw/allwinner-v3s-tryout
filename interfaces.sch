@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:I2C-adc-cache
+LIBS:allwinner-v3s-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -790,10 +790,6 @@ Wire Wire Line
 	8350 6250 8350 6400
 Wire Wire Line
 	8350 6400 8200 6400
-Wire Bus Line
-	5250 5600 5750 5600
-Text Label 5400 5600 0    50   ~ 0
-SDC0_Dn
 Text Label 6650 5750 0    50   ~ 0
 SDC0_D2
 Text Label 6650 5850 0    50   ~ 0
@@ -806,16 +802,6 @@ Text Label 6650 6150 0    50   ~ 0
 SDC0_D0
 Text Label 6650 6250 0    50   ~ 0
 SDC0_D1
-Entry Wire Line
-	5850 6250 5750 6150
-Entry Wire Line
-	5750 6050 5850 6150
-Entry Wire Line
-	5750 5850 5850 5950
-Entry Wire Line
-	5750 5750 5850 5850
-Entry Wire Line
-	5750 5650 5850 5750
 Wire Wire Line
 	7100 5750 6450 5750
 Wire Wire Line
@@ -1203,46 +1189,6 @@ Wire Wire Line
 Connection ~ 10500 3450
 Wire Wire Line
 	10500 3450 10850 3450
-Entry Wire Line
-	1550 5500 1650 5600
-Entry Wire Line
-	1550 5400 1650 5500
-Entry Wire Line
-	1550 5300 1650 5400
-Entry Wire Line
-	1550 5200 1650 5300
-Entry Wire Line
-	1550 5100 1650 5200
-Entry Wire Line
-	1550 5000 1650 5100
-Entry Wire Line
-	1550 4700 1650 4800
-Entry Wire Line
-	1550 4600 1650 4700
-Entry Wire Line
-	1550 4500 1650 4600
-Entry Wire Line
-	1550 4400 1650 4500
-Entry Wire Line
-	1550 4300 1650 4400
-Entry Wire Line
-	1550 4200 1650 4300
-Entry Wire Line
-	1550 3900 1650 4000
-Entry Wire Line
-	1550 3800 1650 3900
-Entry Wire Line
-	1550 3700 1650 3800
-Entry Wire Line
-	1550 3600 1650 3700
-Entry Wire Line
-	1550 3500 1650 3600
-Entry Wire Line
-	1550 3400 1650 3500
-Wire Bus Line
-	1550 2750 950  2750
-Text Label 1100 2750 0    50   ~ 0
-LCD_Dn
 $Comp
 L customized_power:+3V3 #PWR?
 U 1 1 5C3E281F
@@ -1271,10 +1217,50 @@ Wire Wire Line
 	8350 8600 8350 8800
 Wire Wire Line
 	8350 9000 8350 9350
-Wire Bus Line
-	1550 2750 1550 5500
-Wire Bus Line
-	5750 5600 5750 6250
-Text HLabel 950  2750 0    50   Input ~ 0
-LCD_Dn
+Text GLabel 1650 3500 0    50   Input ~ 0
+LCD_D18
+Text GLabel 1650 3600 0    50   Input ~ 0
+LCD_D19
+Text GLabel 1650 3700 0    50   Input ~ 0
+LCD_D20
+Text GLabel 1650 3800 0    50   Input ~ 0
+LCD_D21
+Text GLabel 1650 3900 0    50   Input ~ 0
+LCD_D22
+Text GLabel 1650 4000 0    50   Input ~ 0
+LCD_D23
+Text GLabel 1650 4300 0    50   Input ~ 0
+LCD_D10
+Text GLabel 1650 4400 0    50   Input ~ 0
+LCD_D11
+Text GLabel 1650 4500 0    50   Input ~ 0
+LCD_D12
+Text GLabel 1650 4600 0    50   Input ~ 0
+LCD_D13
+Text GLabel 1650 4700 0    50   Input ~ 0
+LCD_D14
+Text GLabel 1650 4800 0    50   Input ~ 0
+LCD_D15
+Text GLabel 1650 5100 0    50   Input ~ 0
+LCD_D2
+Text GLabel 1650 5200 0    50   Input ~ 0
+LCD_D3
+Text GLabel 1650 5300 0    50   Input ~ 0
+LCD_D4
+Text GLabel 1650 5400 0    50   Input ~ 0
+LCD_D5
+Text GLabel 1650 5500 0    50   Input ~ 0
+LCD_D6
+Text GLabel 1650 5600 0    50   Input ~ 0
+LCD_D7
+Text GLabel 5850 5750 0    50   Input ~ 0
+SDC0_D2
+Text GLabel 5850 5850 0    50   Input ~ 0
+SDC0_D3
+Text GLabel 5850 5950 0    50   Input ~ 0
+SDC0_CMD
+Text GLabel 5850 6150 0    50   Input ~ 0
+SDC0_D0
+Text GLabel 5850 6250 0    50   Input ~ 0
+SDC0_D1
 $EndSCHEMATC

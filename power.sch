@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:I2C-adc-cache
+LIBS:allwinner-v3s-tryout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
