@@ -671,9 +671,9 @@ MCSI_D0_P
 Text Label 11000 5200 2    50   ~ 0
 MCSI_D0_N
 Text Label 11000 5100 2    50   ~ 0
-MCSI_DI_P
+MCSI_D1_P
 Text Label 11000 5000 2    50   ~ 0
-MCSI_DI_N
+MCSI_D1_N
 $Comp
 L taobao-components:Vmcsi #PWR?
 U 1 1 5BD62817
@@ -1421,13 +1421,13 @@ MCSI_CK_N
 Text GLabel 11100 4800 2    50   Input ~ 0
 MCSI_CK_P
 Text GLabel 11100 5000 2    50   Input ~ 0
-MCSI_DI_N
+MCSI_D1_N
 Text GLabel 11100 5100 2    50   Input ~ 0
-MCSI_DI_P
+MCSI_D1_P
 Text GLabel 11100 5200 2    50   Input ~ 0
-MCSI_DO_N
+MCSI_D0_N
 Text GLabel 11100 5300 2    50   Input ~ 0
-MCSI_DO_P
+MCSI_D0_P
 Text GLabel 11100 5600 2    50   Input ~ 0
 ETH_LED_SPD
 Text GLabel 11100 5700 2    50   Input ~ 0
@@ -5560,11 +5560,11 @@ Wire Wire Line
 	27400 13100 27400 13050
 Connection ~ 27400 13050
 Text Label 27400 14000 1    50   ~ 0
-TWI1_SDA0
+TWI1_SDA
 Wire Wire Line
 	27400 14000 27400 13500
 Text Label 27500 14000 1    50   ~ 0
-TWI1_SCK0
+TWI1_SCK
 Text Label 27600 14000 1    50   ~ 0
 TWI0_SDA
 Text Label 27700 14000 1    50   ~ 0
