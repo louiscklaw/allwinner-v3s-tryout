@@ -824,7 +824,7 @@ $EndComp
 Text Label 9000 2050 3    50   ~ 0
 RESET
 Text Label 8900 2050 3    50   ~ 0
-PF6_USB_ID
+USB_ID
 Text Label 8800 2050 3    50   ~ 0
 SDC0_D2
 Text Label 8700 2050 3    50   ~ 0
@@ -1391,7 +1391,7 @@ USB_P
 Text GLabel 7900 1750 1    50   Input ~ 0
 USB_N
 Text GLabel 8900 1750 1    50   Input ~ 0
-PF6_USB_ID
+USB_ID
 Text GLabel 9000 1750 1    50   Input ~ 0
 RESET
 Text GLabel 6400 1750 1    50   Input ~ 0
@@ -2906,7 +2906,7 @@ USB_N
 Text GLabel 22550 2600 0    50   Input ~ 0
 USB_P
 Text GLabel 22600 2700 0    50   Input ~ 0
-PF6_USB_ID
+USB_ID
 $Comp
 L customized_power:+3V3 #PWR?
 U 1 1 5BFD2ECB
@@ -5575,4 +5575,6 @@ Wire Wire Line
 	27600 13500 27600 14000
 Wire Wire Line
 	27500 13500 27500 14000
+Text Label 8900 2550 1    50   ~ 0
+PF6
 $EndSCHEMATC
