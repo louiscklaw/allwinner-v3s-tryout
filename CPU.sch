@@ -1293,12 +1293,6 @@ F 3 "" H 14350 4650 50  0001 C CNN
 	1    14350 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1450 900  2    50   Input ~ 0
-LCD_Dn
-Wire Bus Line
-	1450 900  950  900 
-Text Label 1050 900  0    50   ~ 0
-LCD_Dn
 Text GLabel 3950 3900 0    50   Input ~ 0
 SDC1_D2
 Text GLabel 3950 4000 0    50   Input ~ 0
