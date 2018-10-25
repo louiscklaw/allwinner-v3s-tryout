@@ -9,16 +9,16 @@
 #
 
 # Documents
-*.doc\t diff=astextplain
-*.DOC\t diff=astextplain
+*.doc diff=astextplain
+*.DOC diff=astextplain
 *.docx diff=astextplain
 *.DOCX diff=astextplain
 *.dot  diff=astextplain
 *.DOT  diff=astextplain
 *.pdf  diff=astextplain
-*.PDF\t diff=astextplain
-*.rtf\t diff=astextplain
-*.RTF\t diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
 *.md text
 *.adoc text
 *.textile text
@@ -45,20 +45,20 @@
 
 # Source files
 # ============
-*.pxd\t\ttext
-*.py \t\ttext
-*.py3 \t\ttext
-*.pyw \t\ttext
-*.pyx  \t\ttext
+*.pxdtext
+*.py text
+*.py3 text
+*.pyw text
+*.pyx  text
 
 # Binary files
 # ============
-*.db\t\tbinary
-*.p \t\tbinary
-*.pkl \t\tbinary
-*.pyc \t\tbinary
-*.pyd\t\tbinary
-*.pyo \t\tbinary
+*.dbbinary
+*.p binary
+*.pkl binary
+*.pyc binary
+*.pydbinary
+*.pyo binary
 
 # Note: .db, .p, and .pkl files are associated
 # with the python modules ``pickle``, ``dbm.*``,
