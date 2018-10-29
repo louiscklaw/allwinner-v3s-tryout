@@ -147,8 +147,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 6600 3950 6600
 Wire Wire Line
-	4900 6800 3950 6800
-Wire Wire Line
 	4900 6900 3950 6900
 Wire Wire Line
 	4900 7000 3950 7000
@@ -5157,7 +5155,7 @@ U 1 1 5C11D204
 P 22200 14450
 F 0 "J1" H 22300 14450 50  0000 L CNN
 F 1 "Conn_01x30" H 22300 14350 50  0000 L CNN
-F 2 "footprint-lib.pretty:Pin_Header_Straight_1x30_Pitch2.54mm" H 22200 14450 50  0001 C CNN
+F 2 "footprint-lib.pretty:Pin_Header_Straight_1x30_Pitch1.27mm" H 22200 14450 50  0001 C CNN
 F 3 "~" H 22200 14450 50  0001 C CNN
 	1    22200 14450
 	1    0    0    -1  
@@ -5168,7 +5166,7 @@ U 1 1 5C11D441
 P 25250 14450
 F 0 "J2" H 25350 14450 50  0000 L CNN
 F 1 "Conn_01x30" H 25350 14350 50  0000 L CNN
-F 2 "footprint-lib.pretty:Pin_Header_Straight_1x30_Pitch2.54mm" H 25250 14450 50  0001 C CNN
+F 2 "footprint-lib.pretty:Pin_Header_Straight_1x30_Pitch1.27mm" H 25250 14450 50  0001 C CNN
 F 3 "~" H 25250 14450 50  0001 C CNN
 	1    25250 14450
 	1    0    0    -1  
@@ -6170,4 +6168,180 @@ Wire Wire Line
 Wire Wire Line
 	43700 4400 43700 4300
 Connection ~ 43050 4400
+$Comp
+L Connector_Generic:Conn_01x24 J?
+U 1 1 5DA87EF6
+P 1750 5300
+F 0 "J?" H 1650 3850 50  0000 C CNN
+F 1 "Conn_01x24" H 1650 3950 50  0000 C CNN
+F 2 "" H 1750 5300 50  0001 C CNN
+F 3 "~" H 1750 5300 50  0001 C CNN
+	1    1750 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L customized_power:+5V #PWR?
+U 1 1 5DA8912A
+P 2050 6500
+F 0 "#PWR?" H 2050 6350 50  0001 C CNN
+F 1 "+5V" H 2050 6700 50  0000 C CNN
+F 2 "" H 2050 6500 50  0001 C CNN
+F 3 "" H 2050 6500 50  0001 C CNN
+	1    2050 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 6400 2050 6400
+Wire Wire Line
+	2050 6400 2050 6500
+$Comp
+L customized_power:+3V3 #PWR?
+U 1 1 5DB30217
+P 2250 6500
+F 0 "#PWR?" H 2250 6350 50  0001 C CNN
+F 1 "+3V3" H 2250 6700 50  0000 C CNN
+F 2 "" H 2250 6500 50  0001 C CNN
+F 3 "" H 2250 6500 50  0001 C CNN
+	1    2250 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 6500 2250 6300
+Wire Wire Line
+	2250 6300 1950 6300
+$Comp
+L power:GND #PWR?
+U 1 1 5DBD907C
+P 2400 6500
+F 0 "#PWR?" H 2400 6250 50  0001 C CNN
+F 1 "GND" H 2450 6300 50  0000 C CNN
+F 2 "" H 2400 6500 50  0001 C CNN
+F 3 "" H 2400 6500 50  0001 C CNN
+	1    2400 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6500 2400 6200
+Wire Wire Line
+	2400 6200 1950 6200
+Text Label 4450 5100 0    50   ~ 0
+CSI_D14
+Text Label 4450 5200 0    50   ~ 0
+CSI_D13
+Text Label 4450 5300 0    50   ~ 0
+CSI_D12
+Text Label 4450 5400 0    50   ~ 0
+CSI_D11
+Text Label 4450 5500 0    50   ~ 0
+CSI_D10
+Text Label 4450 5600 0    50   ~ 0
+CSI_D9
+Text Label 4450 6000 0    50   ~ 0
+CSI_D8
+Text Label 4450 6100 0    50   ~ 0
+CSI_D7
+Text Label 4450 6200 0    50   ~ 0
+CSI_D6
+Text Label 4450 6500 0    50   ~ 0
+CSI_D5
+Text Label 4450 6600 0    50   ~ 0
+CSI_D4
+Wire Wire Line
+	4900 6800 3950 6800
+Text Label 4450 6800 0    50   ~ 0
+CSI_D3
+Text Label 4450 6900 0    50   ~ 0
+CSI_D2
+Text Label 4450 7000 0    50   ~ 0
+CSI_D1
+Text Label 6000 8450 1    50   ~ 0
+CSI_D0
+Text Label 6100 8450 1    50   ~ 0
+CSI_VSYNC
+Text Label 6200 8450 1    50   ~ 0
+CSI_HSYNC
+Text Label 6300 8450 1    50   ~ 0
+CSI_MCLK
+Text Label 6400 8450 1    50   ~ 0
+CSI_PCLK
+Text Label 2650 4300 2    50   ~ 0
+CSI_D12
+Text Label 2650 4400 2    50   ~ 0
+CSI_PCLK
+Text Label 2650 4500 2    50   ~ 0
+CSI_MCLK
+Text Label 2650 4800 2    50   ~ 0
+CSI_HSYNC
+Text Label 2650 4900 2    50   ~ 0
+CSI_VSYNC
+Text Label 2650 5000 2    50   ~ 0
+CSI_D1
+Text Label 2650 5100 2    50   ~ 0
+CSI_D0
+Text Label 2650 5200 2    50   ~ 0
+CSI_D3
+Text Label 2650 5300 2    50   ~ 0
+CSI_D2
+Text Label 2650 5400 2    50   ~ 0
+CSI_D5
+Text Label 2650 5500 2    50   ~ 0
+CSI_D4
+Text Label 2650 5600 2    50   ~ 0
+CSI_D7
+Text Label 2650 5700 2    50   ~ 0
+CSI_D6
+Text Label 2650 5800 2    50   ~ 0
+CSI_D9
+Text Label 2650 5900 2    50   ~ 0
+CSI_D8
+Text Label 2650 6000 2    50   ~ 0
+CSI_D11
+Text Label 2650 6100 2    50   ~ 0
+CSI_D10
+Text Label 7500 8450 1    50   ~ 0
+I2C1_SCL
+Text Label 7600 8450 1    50   ~ 0
+I2C1_SDA
+Text Label 2650 4600 2    50   ~ 0
+I2C1_SCL
+Text Label 2650 4700 2    50   ~ 0
+I2C1_SDA
+Wire Wire Line
+	2650 4300 1950 4300
+Wire Wire Line
+	2650 4400 1950 4400
+Wire Wire Line
+	2650 4500 1950 4500
+Wire Wire Line
+	2650 4600 1950 4600
+Wire Wire Line
+	2650 4700 1950 4700
+Wire Wire Line
+	2650 4800 1950 4800
+Wire Wire Line
+	2650 4900 1950 4900
+Wire Wire Line
+	2650 5000 1950 5000
+Wire Wire Line
+	2650 5100 1950 5100
+Wire Wire Line
+	2650 5200 1950 5200
+Wire Wire Line
+	2650 5300 1950 5300
+Wire Wire Line
+	2650 5400 1950 5400
+Wire Wire Line
+	2650 5500 1950 5500
+Wire Wire Line
+	2650 5600 1950 5600
+Wire Wire Line
+	2650 5700 1950 5700
+Wire Wire Line
+	2650 5800 1950 5800
+Wire Wire Line
+	2650 5900 1950 5900
+Wire Wire Line
+	2650 6000 1950 6000
+Wire Wire Line
+	2650 6100 1950 6100
 $EndSCHEMATC
